@@ -69,6 +69,7 @@
 		3F527D0C1C83E68B00474371 /* SignInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInVC.m; sourceTree = "<group>"; };
 		3F527D101C83E6BD00474371 /* ContactsTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableVC.h; sourceTree = "<group>"; };
 		3F527D111C83E6BD00474371 /* ContactsTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableVC.m; sourceTree = "<group>"; };
+		3F527D151C8414E300474371 /* SignInDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInDelegate.h; sourceTree = "<group>"; };
 		61066B48FC63CAB5E8CDA40C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BA10AD311D1179EC30470F02 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -129,6 +130,7 @@
 				3F1438941C83DB58005376C6 /* AppDelegate.m */,
 				3F527D0B1C83E68B00474371 /* SignInVC.h */,
 				3F527D0C1C83E68B00474371 /* SignInVC.m */,
+				3F527D151C8414E300474371 /* SignInDelegate.h */,
 				3F527D101C83E6BD00474371 /* ContactsTableVC.h */,
 				3F527D111C83E6BD00474371 /* ContactsTableVC.m */,
 				3F527D061C83E65600474371 /* LaunchContainer.h */,

@@ -13,8 +13,21 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 
-    [GIDSignIn sharedInstance].allowsSignInWithWebView = NO;
-    [[GIDSignIn sharedInstance] signIn];
+    self.signInDelegate = self.parentViewController;
+
+    GIDSignIn *googleSignIn = [GIDSignIn sharedInstance];
+
+    googleSignIn.delegate = self;
+    googleSignIn.allowsSignInWithWebView = NO;
+    
+    [googleSignIn signIn];
+}
+
+- (void)signIn:(GIDSignIn *)signIn didSignInForUser:(GIDGoogleUser *)user withError:(NSError *)error {
+    NSAssert( !error, @"Error on Google signin: %@", error);
+    [self.view removeFromSuperview];
+    [self removeFromParentViewController];
+    [self.signInDelegate didCompleteGoogleSignIn];
 }
 
 @end

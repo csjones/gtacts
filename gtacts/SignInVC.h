@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <Google/SignIn.h>
 
+#import "SignInDelegate.h"
 
 @interface SignInVC : UIViewController
+
+@property ( weak, nonatomic ) id<SignInDelegate> signInDelegate;
 
 @end
