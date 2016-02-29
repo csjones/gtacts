@@ -23,8 +23,8 @@
                                     <segue destination="IhD-dE-wn1" kind="embed" id="2ZF-PR-lZa"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFu-1e-iUl">
-                                <rect key="frame" x="180" y="237" width="240" height="128"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFu-1e-iUl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <connections>
                                     <segue destination="2Hv-ae-tzn" kind="embed" id="PIk-xg-Am2"/>
                                 </connections>
@@ -32,10 +32,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="UFu-1e-iUl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="D5y-Rx-Lyv"/>
                             <constraint firstItem="DaO-8G-SyG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="US7-sr-Hee"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UFu-1e-iUl" secondAttribute="bottom" id="aXJ-tG-z4g"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DaO-8G-SyG" secondAttribute="bottom" id="itW-I8-dhy"/>
                             <constraint firstAttribute="trailing" secondItem="DaO-8G-SyG" secondAttribute="trailing" id="nOT-gh-B5U"/>
                             <constraint firstItem="DaO-8G-SyG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="p2c-q3-b5f"/>
+                            <constraint firstAttribute="trailing" secondItem="UFu-1e-iUl" secondAttribute="trailing" id="ps1-Bx-Ghf"/>
+                            <constraint firstItem="UFu-1e-iUl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qPv-28-ti0"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -76,14 +80,14 @@
             <objects>
                 <viewController id="2Hv-ae-tzn" customClass="SignInVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nSk-GO-qNe">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAo-cu-Adm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="830" y="337"/>
+            <point key="canvasLocation" x="1122" y="337"/>
         </scene>
     </scenes>
 </document>
