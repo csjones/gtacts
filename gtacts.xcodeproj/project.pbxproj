@@ -19,6 +19,15 @@
 		3F527D031C83E12C00474371 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F527D021C83E12C00474371 /* GoogleService-Info.plist */; };
 		3F527D041C83E13500474371 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F527D021C83E12C00474371 /* GoogleService-Info.plist */; };
 		3F527D051C83E13600474371 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F527D021C83E12C00474371 /* GoogleService-Info.plist */; };
+		3F527D081C83E65600474371 /* LaunchContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F527D071C83E65600474371 /* LaunchContainer.m */; };
+		3F527D091C83E65600474371 /* LaunchContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F527D071C83E65600474371 /* LaunchContainer.m */; };
+		3F527D0A1C83E65600474371 /* LaunchContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F527D071C83E65600474371 /* LaunchContainer.m */; };
+		3F527D0D1C83E68B00474371 /* SignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F527D0C1C83E68B00474371 /* SignInVC.m */; };
+		3F527D0E1C83E68B00474371 /* SignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F527D0C1C83E68B00474371 /* SignInVC.m */; };
+		3F527D0F1C83E68B00474371 /* SignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F527D0C1C83E68B00474371 /* SignInVC.m */; };
+		3F527D121C83E6BD00474371 /* ContactsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F527D111C83E6BD00474371 /* ContactsTableVC.m */; };
+		3F527D131C83E6BD00474371 /* ContactsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F527D111C83E6BD00474371 /* ContactsTableVC.m */; };
+		3F527D141C83E6BD00474371 /* ContactsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F527D111C83E6BD00474371 /* ContactsTableVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +66,12 @@
 		3F1438B51C83DB59005376C6 /* gtactsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gtactsUITests.m; sourceTree = "<group>"; };
 		3F1438B71C83DB59005376C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F527D021C83E12C00474371 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3F527D061C83E65600474371 /* LaunchContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchContainer.h; sourceTree = "<group>"; };
+		3F527D071C83E65600474371 /* LaunchContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchContainer.m; sourceTree = "<group>"; };
+		3F527D0B1C83E68B00474371 /* SignInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInVC.h; sourceTree = "<group>"; };
+		3F527D0C1C83E68B00474371 /* SignInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInVC.m; sourceTree = "<group>"; };
+		3F527D101C83E6BD00474371 /* ContactsTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableVC.h; sourceTree = "<group>"; };
+		3F527D111C83E6BD00474371 /* ContactsTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableVC.m; sourceTree = "<group>"; };
 		61066B48FC63CAB5E8CDA40C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BA10AD311D1179EC30470F02 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,6 +132,12 @@
 				3F1438941C83DB58005376C6 /* AppDelegate.m */,
 				3F1438961C83DB58005376C6 /* ViewController.h */,
 				3F1438971C83DB58005376C6 /* ViewController.m */,
+				3F527D0B1C83E68B00474371 /* SignInVC.h */,
+				3F527D0C1C83E68B00474371 /* SignInVC.m */,
+				3F527D101C83E6BD00474371 /* ContactsTableVC.h */,
+				3F527D111C83E6BD00474371 /* ContactsTableVC.m */,
+				3F527D061C83E65600474371 /* LaunchContainer.h */,
+				3F527D071C83E65600474371 /* LaunchContainer.m */,
 				3F1438991C83DB58005376C6 /* Main.storyboard */,
 				3F14389C1C83DB59005376C6 /* Assets.xcassets */,
 				3F14389E1C83DB59005376C6 /* LaunchScreen.storyboard */,
@@ -355,6 +376,9 @@
 			files = (
 				3F1438981C83DB58005376C6 /* ViewController.m in Sources */,
 				3F1438951C83DB58005376C6 /* AppDelegate.m in Sources */,
+				3F527D0D1C83E68B00474371 /* SignInVC.m in Sources */,
+				3F527D081C83E65600474371 /* LaunchContainer.m in Sources */,
+				3F527D121C83E6BD00474371 /* ContactsTableVC.m in Sources */,
 				3F1438921C83DB58005376C6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +387,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F527D131C83E6BD00474371 /* ContactsTableVC.m in Sources */,
+				3F527D091C83E65600474371 /* LaunchContainer.m in Sources */,
 				3F1438AB1C83DB59005376C6 /* gtactsTests.m in Sources */,
+				3F527D0E1C83E68B00474371 /* SignInVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +398,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F527D141C83E6BD00474371 /* ContactsTableVC.m in Sources */,
+				3F527D0A1C83E65600474371 /* LaunchContainer.m in Sources */,
 				3F1438B61C83DB59005376C6 /* gtactsUITests.m in Sources */,
+				3F527D0F1C83E68B00474371 /* SignInVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
