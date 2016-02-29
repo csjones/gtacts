@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <Google/SignIn.h>
 
+#import "SignInDelegate.h"
 
-@interface LaunchContainer : UIViewController <GIDSignInDelegate>
+@interface LaunchContainer : UIViewController <SignInDelegate>
 
 @end

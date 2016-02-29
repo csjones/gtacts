@@ -7,17 +7,15 @@
 //
 
 #import "LaunchContainer.h"
+#import "ContactsTableVC.h"
 
 @implementation LaunchContainer
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)didCompleteGoogleSignIn
+{
+    ContactsTableVC *contactsTableVC = self.childViewControllers[0];
 
-    [GIDSignIn sharedInstance].delegate = self;
-}
-
-- (void)signIn:(GIDSignIn *)signIn didSignInForUser:(GIDGoogleUser *)user withError:(NSError *)error {
-    
+    [contactsTableVC shouldBeginFetchingContactData];
 }
 
 @end
