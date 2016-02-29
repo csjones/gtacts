@@ -10,4 +10,11 @@
 
 @implementation SignInVC
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    [GIDSignIn sharedInstance].allowsSignInWithWebView = NO;
+    [[GIDSignIn sharedInstance] signIn];
+}
+
 @end

@@ -10,4 +10,14 @@
 
 @implementation LaunchContainer
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    [GIDSignIn sharedInstance].delegate = self;
+}
+
+- (void)signIn:(GIDSignIn *)signIn didSignInForUser:(GIDGoogleUser *)user withError:(NSError *)error {
+    
+}
+
 @end
