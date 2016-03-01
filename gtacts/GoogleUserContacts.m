@@ -7,13 +7,16 @@
 //
 
 #import "GoogleUserContacts.h"
-#import "ContactsRequester.h"
 
 @implementation GoogleUserContacts
 
 - (id)init {
     if (self = [super init]) {
-        [[[ContactsRequester alloc] init] fetchContactsForLastNameStartingWith:@"B"];
+        _contactsRequester = [[ContactsRequester alloc] init];
+
+        _contactsRequester.contactsRequesterDelegate = self;
+
+        [_contactsRequester fetchContactsForLastNameStartingWith:@"B"];
     }
     return self;
 }
@@ -31,7 +34,7 @@
 }
 
 - (void)didFetchContacts:(NSArray*)contacts forLastName:(NSString*)lastName {
-
+    NSLog(@"contacts %@", contacts);
 }
 
 @end

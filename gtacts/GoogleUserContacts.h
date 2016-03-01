@@ -10,10 +10,12 @@
 #import <Google/SignIn.h>
 #import <UIKit/UIKit.h>
 
+#import "ContactsRequester.h"
 #import "ContactsRequesterDelegate.h"
 
 @interface GoogleUserContacts : NSObject <UITableViewDataSource, ContactsRequesterDelegate>
 {
+    ContactsRequester *_contactsRequester;
 }
 
 @end
