@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "GoogleUserContacts.h"
+
 @interface ContactsTableVC : UITableViewController
+{
+    GoogleUserContacts *_userContacts;
+}
+
+- (void)shouldBeginFetchingContactData;
 
 @end

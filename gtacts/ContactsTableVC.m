@@ -10,4 +10,8 @@
 
 @implementation ContactsTableVC
 
+- (void)shouldBeginFetchingContactData {
+    _userContacts = [[GoogleUserContacts alloc] init];
+}
+
 @end
