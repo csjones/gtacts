@@ -30,6 +30,9 @@
 		3F527D1C1C841D2000474371 /* GoogleUserContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F527D1B1C841D2000474371 /* GoogleUserContacts.m */; };
 		3F527D1D1C841D2000474371 /* GoogleUserContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F527D1B1C841D2000474371 /* GoogleUserContacts.m */; };
 		3F527D1E1C841D2000474371 /* GoogleUserContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F527D1B1C841D2000474371 /* GoogleUserContacts.m */; };
+		3F527D261C857FAF00474371 /* ContactsRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F527D251C857FAF00474371 /* ContactsRequester.m */; };
+		3F527D271C857FAF00474371 /* ContactsRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F527D251C857FAF00474371 /* ContactsRequester.m */; };
+		3F527D281C857FAF00474371 /* ContactsRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F527D251C857FAF00474371 /* ContactsRequester.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		3F527D151C8414E300474371 /* SignInDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInDelegate.h; sourceTree = "<group>"; };
 		3F527D1A1C841D2000474371 /* GoogleUserContacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleUserContacts.h; sourceTree = "<group>"; };
 		3F527D1B1C841D2000474371 /* GoogleUserContacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleUserContacts.m; sourceTree = "<group>"; };
+		3F527D241C857FAF00474371 /* ContactsRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsRequester.h; sourceTree = "<group>"; };
+		3F527D251C857FAF00474371 /* ContactsRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsRequester.m; sourceTree = "<group>"; };
+		3F527D291C8580AB00474371 /* ContactsRequesterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsRequesterDelegate.h; sourceTree = "<group>"; };
 		61066B48FC63CAB5E8CDA40C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BA10AD311D1179EC30470F02 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,6 +148,9 @@
 				3F527D071C83E65600474371 /* LaunchContainer.m */,
 				3F527D1A1C841D2000474371 /* GoogleUserContacts.h */,
 				3F527D1B1C841D2000474371 /* GoogleUserContacts.m */,
+				3F527D241C857FAF00474371 /* ContactsRequester.h */,
+				3F527D251C857FAF00474371 /* ContactsRequester.m */,
+				3F527D291C8580AB00474371 /* ContactsRequesterDelegate.h */,
 				3F1438991C83DB58005376C6 /* Main.storyboard */,
 				3F14389C1C83DB59005376C6 /* Assets.xcassets */,
 				3F14389E1C83DB59005376C6 /* LaunchScreen.storyboard */,
@@ -382,6 +391,7 @@
 				3F1438951C83DB58005376C6 /* AppDelegate.m in Sources */,
 				3F527D0D1C83E68B00474371 /* SignInVC.m in Sources */,
 				3F527D081C83E65600474371 /* LaunchContainer.m in Sources */,
+				3F527D261C857FAF00474371 /* ContactsRequester.m in Sources */,
 				3F527D121C83E6BD00474371 /* ContactsTableVC.m in Sources */,
 				3F1438921C83DB58005376C6 /* main.m in Sources */,
 			);
@@ -393,6 +403,7 @@
 			files = (
 				3F527D1D1C841D2000474371 /* GoogleUserContacts.m in Sources */,
 				3F527D131C83E6BD00474371 /* ContactsTableVC.m in Sources */,
+				3F527D271C857FAF00474371 /* ContactsRequester.m in Sources */,
 				3F527D091C83E65600474371 /* LaunchContainer.m in Sources */,
 				3F1438AB1C83DB59005376C6 /* gtactsTests.m in Sources */,
 				3F527D0E1C83E68B00474371 /* SignInVC.m in Sources */,
@@ -405,6 +416,7 @@
 			files = (
 				3F527D1E1C841D2000474371 /* GoogleUserContacts.m in Sources */,
 				3F527D141C83E6BD00474371 /* ContactsTableVC.m in Sources */,
+				3F527D281C857FAF00474371 /* ContactsRequester.m in Sources */,
 				3F527D0A1C83E65600474371 /* LaunchContainer.m in Sources */,
 				3F1438B61C83DB59005376C6 /* gtactsUITests.m in Sources */,
 				3F527D0F1C83E68B00474371 /* SignInVC.m in Sources */,
