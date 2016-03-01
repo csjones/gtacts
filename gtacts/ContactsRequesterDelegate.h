@@ -6,8 +6,10 @@
 //  Copyright © 2016 csjones. All rights reserved.
 //
 
-#ifndef ContactsRequesterDelegate_h
-#define ContactsRequesterDelegate_h
+#import <Foundation/Foundation.h>
 
+@protocol ContactsRequesterDelegate <NSObject>
 
-#endif /* ContactsRequesterDelegate_h */
+- (void)didFetchContacts:(NSArray*)contacts forLastName:(NSString*)lastName;
+
+@end
