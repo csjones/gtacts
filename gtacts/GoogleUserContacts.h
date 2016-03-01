@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Google/SignIn.h>
+#import <UIKit/UIKit.h>
 
-@interface GoogleUserContacts : NSObject
+#import "ContactsRequesterDelegate.h"
+
+@interface GoogleUserContacts : NSObject <UITableViewDataSource, ContactsRequesterDelegate>
+{
+}
 
 @end

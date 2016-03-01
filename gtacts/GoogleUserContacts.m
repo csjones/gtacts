@@ -7,7 +7,31 @@
 //
 
 #import "GoogleUserContacts.h"
+#import "ContactsRequester.h"
 
 @implementation GoogleUserContacts
+
+- (id)init {
+    if (self = [super init]) {
+        [[[ContactsRequester alloc] init] fetchContactsForLastNameStartingWith:@"B"];
+    }
+    return self;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 0;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return nil;
+}
+
+- (void)didFetchContacts:(NSArray*)contacts forLastName:(NSString*)lastName {
+
+}
 
 @end
