@@ -17,9 +17,12 @@
 
     GIDSignIn *googleSignIn = [GIDSignIn sharedInstance];
 
+    NSArray *currentScopes = googleSignIn.scopes;
+
     googleSignIn.delegate = self;
     googleSignIn.allowsSignInWithWebView = NO;
-    
+    googleSignIn.scopes = [currentScopes arrayByAddingObject:@"https://www.googleapis.com/auth/contacts.readonly"];
+
     [googleSignIn signIn];
 }
 
