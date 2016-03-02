@@ -23,4 +23,6 @@
 
 @property ( weak, nonatomic ) id<UpdateContactsDelegate> updateContactsDelegate;
 
+- (void)getMoreContacts;
+
 @end

@@ -17,10 +17,12 @@
         _contactsRequester = [[ContactsRequester alloc] init];
 
         _contactsRequester.contactsRequesterDelegate = self;
-
-        [_contactsRequester fetchContactsForLastNameStartingWith:@"A"];
     }
     return self;
+}
+
+- (void)getMoreContacts {
+    [_contactsRequester fetchContactsForLastNameStartingWith:@"A"];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -45,7 +47,7 @@
     cell.textLabel.text = contact[@"name"];
     cell.detailTextLabel.text = contact[@"email"];
 
-    return nil;
+    return cell;
 }
 
 - (void)didFetchContacts:(NSArray*)contacts forLastName:(NSString*)lastName {

@@ -10,12 +10,18 @@
 
 @implementation ContactsTableVC
 
-- (void)shouldBeginFetchingContactData {
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
     _userContacts = [[GoogleUserContacts alloc] init];
 
     _userContacts.updateContactsDelegate = self;
 
     self.tableView.dataSource = _userContacts;
+}
+
+- (void)shouldBeginFetchingContactData {
+    [_userContacts getMoreContacts];
 }
 
 - (void)didAddContactsToSection:(NSUInteger)section {
