@@ -7,6 +7,7 @@
 //
 
 #import "GoogleUserContacts.h"
+#import "UIImageView+AFNetworking.h"
 
 @implementation GoogleUserContacts
 
@@ -55,10 +56,14 @@
 
     NSDictionary *contact = _contacts[ sortedArray[ indexPath.section ] ][ indexPath.row ];
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
 
     cell.textLabel.text = contact[@"name"];
     cell.detailTextLabel.text = contact[@"email"];
+
+    NSString *stringURL = [[NSString alloc] initWithFormat:@"%@?v=3&access_token=%@", contact[@"image"], [GIDSignIn sharedInstance].currentUser.authentication.accessToken];
+
+    [cell.imageView setImageWithURL:[[NSURL alloc] initWithString:stringURL] placeholderImage:[UIImage imageNamed:@"placeholder"]];
 
     return cell;
 }
