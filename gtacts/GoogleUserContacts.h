@@ -25,7 +25,7 @@
     NSArray *_alphabet;
 }
 
-@property ( weak, nonatomic ) id<UpdateContactsDelegate> updateContactsDelegate;
+@property ( weak, nonatomic, nullable ) id<UpdateContactsDelegate> updateContactsDelegate;
 
 - (void)getMoreContacts;
 
