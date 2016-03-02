@@ -11,11 +11,16 @@
 #import <UIKit/UIKit.h>
 
 #import "ContactsRequester.h"
+#import "UpdateContactsDelegate.h"
 #import "ContactsRequesterDelegate.h"
 
 @interface GoogleUserContacts : NSObject <UITableViewDataSource, ContactsRequesterDelegate>
 {
     ContactsRequester *_contactsRequester;
+
+    NSMutableDictionary *_contacts;
 }
+
+@property ( weak, nonatomic ) id<UpdateContactsDelegate> updateContactsDelegate;
 
 @end
