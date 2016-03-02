@@ -17,12 +17,25 @@
         _contactsRequester = [[ContactsRequester alloc] init];
 
         _contactsRequester.contactsRequesterDelegate = self;
+
+        _alphabet = @[ @"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",
+                       @"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z" ];
+
+        _counter = 0;
     }
     return self;
 }
 
 - (void)getMoreContacts {
-    [_contactsRequester fetchContactsForLastNameStartingWith:@"A"];
+    if (_counter == _alphabet.count) {
+        return;
+    }
+
+    [_contactsRequester fetchContactsForLastNameStartingWith:_alphabet[ _counter ]];
+
+    if (_counter < _alphabet.count) {
+        _counter++;
+    }
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

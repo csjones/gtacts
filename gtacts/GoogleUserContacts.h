@@ -19,6 +19,10 @@
     ContactsRequester *_contactsRequester;
 
     NSMutableDictionary *_contacts;
+
+    NSUInteger _counter;
+
+    NSArray *_alphabet;
 }
 
 @property ( weak, nonatomic ) id<UpdateContactsDelegate> updateContactsDelegate;
