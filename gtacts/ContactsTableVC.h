@@ -14,6 +14,8 @@
 @interface ContactsTableVC : UITableViewController <UpdateContactsDelegate>
 {
     GoogleUserContacts *_userContacts;
+
+    dispatch_once_t _pred;
 }
 
 - (void)shouldBeginFetchingContactData;
