@@ -12,6 +12,15 @@
 
 - (void)shouldBeginFetchingContactData {
     _userContacts = [[GoogleUserContacts alloc] init];
+
+    _userContacts.updateContactsDelegate = self;
+
+    self.tableView.dataSource = _userContacts;
+}
+
+- (void)didAddContactsToSection:(NSUInteger)section {
+    [self.tableView insertSections:[[NSIndexSet alloc] initWithIndex:section]
+                  withRowAnimation:UITableViewRowAnimationTop];
 }
 
 @end

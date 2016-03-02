@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 #import "GoogleUserContacts.h"
+#import "UpdateContactsDelegate.h"
 
-@interface ContactsTableVC : UITableViewController
+@interface ContactsTableVC : UITableViewController <UpdateContactsDelegate>
 {
     GoogleUserContacts *_userContacts;
 }
