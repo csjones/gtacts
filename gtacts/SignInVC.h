@@ -11,8 +11,8 @@
 
 #import "SignInDelegate.h"
 
-@interface SignInVC : UIViewController
+@interface SignInVC : UIViewController <GIDSignInDelegate, GIDSignInUIDelegate>
 
-@property ( weak, nonatomic ) id<SignInDelegate> signInDelegate;
+@property ( weak, nonatomic, nullable ) id<SignInDelegate> signInDelegate;
 
 @end
